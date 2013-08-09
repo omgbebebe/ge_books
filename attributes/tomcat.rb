@@ -1,0 +1,6 @@
+default['tomcat']['user'] = "tomcat"
+default['tomcat']['group'] = "tomcat"
+default['tomcat']['home'] = "/var/lib/tomcat/"
+default['tomcat']['package']['url'] = "#{node['base_url']}/tomcat/apache-tomcat-7.0.42.tar.gz"
+default['tomcat']['package']['checksum'] = "001a64629a93103d4f53ac95faf3e52a63657b95"
+default['tomcat']['ajp13']['port'] = "8009"

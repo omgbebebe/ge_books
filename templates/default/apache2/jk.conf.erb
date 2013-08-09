@@ -1,0 +1,8 @@
+<IfModule jk_module>
+  JkWorkersFile /etc/httpd/jk.workers.properties
+  JkLogFile     /var/log/httpd/mod_jk1.log
+  JkLogLevel    debug
+  JkLogStampFormat "[%a %b %d %H:%M:%S %Y] "
+  JkMount /*.jsp worker1
+  JkMount /* worker1
+</IfModule>
